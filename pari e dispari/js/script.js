@@ -1,5 +1,5 @@
 /* DICHIARAIONE VARIABILI */
-let tipoNumero;
+let tipoNumero='';
 let numero = 0;
 let i = 0;
 let sum = 0;
@@ -7,23 +7,23 @@ let risultato;
 
 /* L’utente sceglie pari o dispari */
 
-tipoNumero = prompt ('Pari o dispari?');
+/* tipoNumero = prompt ('Pari o dispari?'); */
 
-
-/* while (i < 1) {
-    if (tipoNumero = 'pari') {
-        tipoNumero = prompt('Pari o dispari?');
-    } else if (tipoNumero = 'dispari') {
-        tipoNumero = prompt('Pari o dispari?');
-    } else {
+ while (i < 1) {
+    if (tipoNumero === 'pari') {
         i=2;
+    } else if (tipoNumero === 'dispari') {
+        i=2;
+    } else {
+        tipoNumero = prompt('Pari o dispari?');
     }
-} */
+} 
 
 
 /* Utente inserisce un numero da 1 a 5. */
 
-while (i < 1) {   /* DEVO CAMBIARE LA VARIABILE i? */
+i=0;
+while (i < 1) {   
     
    numero = parseInt(prompt('Inserisci un numero tra 1 e 5'));
    console.log('Il numero inserito è ' + numero);
@@ -41,7 +41,6 @@ sum = numeroGenerato () + numero;
 console.log('Il numero inserito è ' + sum);
 
 /* Stabiliamo se la somma dei due numeri è pari o dispari  */
-
 
 pariDispari();
 
